@@ -29,13 +29,13 @@ app = start_application()
 
 @app.get("/", tags=["System"])
 def home():
-    return {"msg": "Hello FastAPI Blog🚀"}
+    return {"msg": "Hello FastAPI Auth🚀"}
 
 @app.get("/health")
 def health_check():
     return {
         "status": "healthy",
-        "service": "Blog🚀 API",
+        "service": "FastAPI Auth🚀",
         "version": "0.1.0"
     }
 

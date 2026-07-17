@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Settings:
-    PROJECT_NAME: str = "Fast API Blog 🔥"
+    PROJECT_NAME: str = "Fast API Auth 🔥"
     PROJECT_VERSION: str = "1.0.0"
 
     PROJECT_DESCRIPTION: str = (
@@ -17,7 +17,7 @@ class Settings:
     POSTGRES_PASSWORD: str = os.getenv("POSTGRES_PASSWORD", "postgres")
     POSTGRES_SERVER: str = os.getenv("POSTGRES_SERVER", "postgres") # Внутри сети Docker имя сервиса - 'postgres'
     POSTGRES_PORT: str = os.getenv("POSTGRES_PORT", "5432")
-    POSTGRES_DB: str = os.getenv("POSTGRES_DB", "fastblog")
+    POSTGRES_DB: str = os.getenv("POSTGRES_DB", "fastapi_auth")
     
     # Динамически собираем URL при каждом обращении
     @property
